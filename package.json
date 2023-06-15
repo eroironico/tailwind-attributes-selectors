@@ -1,6 +1,6 @@
 {
   "name": "tailwind-attributes-selectors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind plugin for creating custom attributes selectors",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,7 @@
     "attribute selectors"
   ],
   "author": "eroironico",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/eroironico/tailwind-attributes-selectors/issues"
   },
