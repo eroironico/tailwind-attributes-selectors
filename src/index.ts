@@ -27,4 +27,4 @@ const attributesPlugin = (config: Config) =>
       )
   )
 
-export default attributesPlugin
+export = attributesPlugin
