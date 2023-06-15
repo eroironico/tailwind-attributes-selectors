@@ -1,8 +1,15 @@
 {
   "name": "tailwind-attributes-selectors",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Tailwind plugin for creating custom attributes selectors",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "git add .",
+    "postversion": "git push && git push --tags"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eroironico/tailwind-attributes-selectors.git"
@@ -20,5 +27,11 @@
   "bugs": {
     "url": "https://github.com/eroironico/tailwind-attributes-selectors/issues"
   },
-  "homepage": "https://github.com/eroironico/tailwind-attributes-selectors#readme"
+  "homepage": "https://github.com/eroironico/tailwind-attributes-selectors#readme",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
