@@ -1,6 +1,6 @@
 {
   "name": "tailwind-attributes-selectors",
-  "version": "0.0.6",
+  "version": "1.0.1",
   "description": "Tailwind plugin for creating custom attributes selectors",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
