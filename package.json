@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-attributes-selectors",
+  "version": "1.0.0",
+  "description": "Tailwind plugin for creating custom attributes selectors",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eroironico/tailwind-attributes-selectors.git"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "custom selector",
+    "custom selectors",
+    "attribute selector",
+    "attribute selectors"
+  ],
+  "author": "eroironico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eroironico/tailwind-attributes-selectors/issues"
+  },
+  "homepage": "https://github.com/eroironico/tailwind-attributes-selectors#readme"
+}
