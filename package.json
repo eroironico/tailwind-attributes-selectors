@@ -23,7 +23,7 @@
     "attribute selectors"
   ],
   "author": "eroironico",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/eroironico/tailwind-attributes-selectors/issues"
   },
