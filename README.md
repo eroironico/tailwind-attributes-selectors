@@ -11,7 +11,6 @@ npm install tailwind-attributes-selectors
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
-
 ```js
 // tailwind.config.js
 const config = {
@@ -26,6 +25,24 @@ module.exports = {
   },
   plugins: [
     require("tailwind-attributes-selectors")(config),
+    // ...
+  ],
+}
+```
+
+Or with the shorthand version (typesafe with IntelliSense):
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require("tailwind-attributes-selectors")({
+      "role-dialog": ["role", "=", "dialog"],
+      "is-external-link": ["href", "^=", "http"],
+      "has-role": "role",
+    }),
     // ...
   ],
 }
