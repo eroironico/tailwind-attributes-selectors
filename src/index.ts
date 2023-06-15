@@ -1,6 +1,8 @@
 import * as plugin from "tailwindcss/plugin"
 import Config from "./types/config"
 
+export { type Config }
+
 /**
  * @param {Config} config The config object: each key is a tw selector and each value is the corresponding css selector
  */
