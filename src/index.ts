@@ -1,7 +1,10 @@
 import * as plugin from "tailwindcss/plugin"
 import Config from "./types/config"
 
-export default (config: Config) =>
+/**
+ * @param {Config} config The config object: each key is a tw selector and each value is the corresponding css selector
+ */
+const attributesPlugin = (config: Config) =>
   plugin(
     ({
       addVariant,
@@ -23,3 +26,5 @@ export default (config: Config) =>
         )
       )
   )
+
+export default attributesPlugin
