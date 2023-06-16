@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
+    "build": "tsc && node -e fs.rmSync(\\\"./dist/types.js\\\")",
+    "prepare": "npm run build",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -15,10 +16,8 @@
   "keywords": [
     "tailwind",
     "tailwindcss",
-    "custom selector",
-    "custom selectors",
-    "attribute selector",
-    "attribute selectors"
+    "selector",
+    "selectors"
   ],
   "author": "eroironico",
   "license": "MIT",

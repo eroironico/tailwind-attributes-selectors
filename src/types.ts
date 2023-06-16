@@ -172,3 +172,24 @@ export type Attribute =
   | "srclang"
   | "playsinline"
   | "poster"
+
+/**
+ * - = : equals
+ * - ~= : contains
+ * - |= : starts with (note: value has to be a whole word, either alone, like lang="en", or followed by a hyphen)
+ * - ^= : starts with (note: value can be anything)
+ * - $= : ends with
+ * - *= : contains
+ */
+export type Matcher = "=" | "~=" | "|=" | "^=" | "$=" | "*="
+
+/**
+ * if value is a string it acts as the `[attribute]` selector meaning that it will target all elements that just have that attribute
+ */
+export type Selector =
+  | Attribute
+  | [attribute: Attribute, matcher: Matcher, value: string]
+
+export type ClassName = string
+
+export type Config = Record<ClassName, Selector>

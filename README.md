@@ -50,16 +50,22 @@ module.exports = {
 
 ## Usage
 
-In your template you can use any of the keys of the config object as classes
+Possible matcher values are those you can use in normal css and are:
+* "=": equals
+* "~=": contains
+* "|=": starts with (note: value has to be a whole word, either alone, like `lang="en"`, or followed by a hyphen, like `lang="en-US"`)
+* "^=": starts with (note: value can be anything)
+* "$=": ends with
+* "*=": contains
 
-Example (with the above config):
+In your template you can use any of the keys of the config object as classes, for example (with the above config):
 ```html
 <div role="dialog" class="role-dialog:background-white">...</div>
 <a href="https://example.com" class="is-external-link:background-white">...</a>
 <div role="whatever" class="has-role:background-white">...</div>
 ```
 
-This can became super useful when working with components when you don't know which attributes will be passed to a certain component
+This can became useful when working with components when you don't know which attributes will be passed to a certain component
 
 ## License
 
